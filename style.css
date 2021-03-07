@@ -1,0 +1,19 @@
+#demo {
+ text-align: center;
+ 
+}
+
+#home{
+    background: green;
+    width: 400px;
+    height: 9vh;
+    color: #fff;
+    text-align: center;
+    line-height: 9vh;
+    text-transform: uppercase;
+}
+
+.myTurn h1:first-child{
+    font-size: 44px;
+    color: #520fbe
+}
