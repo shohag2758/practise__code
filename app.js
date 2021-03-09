@@ -62,52 +62,51 @@
 
 // };
 
-// let prog = function(name,price){
-//   let cars = Object.create(salaryMethod);
+let prog = function (name, price) {
+  let cars = Object.create(salaryMethod);
 
-// cars.name = name;
-// cars.price = price;
+  cars.name = name;
+  cars.price = price;
 
-// return cars;
-
-// }
-
-// let toyota = new prog('frod','20 milion');
-// let person = new prog('samiul','3200');
-
-// toyota.salary()
-
-// console.log(toyota)
-// console.log(person)
-
-// let mySalary = {
-//   name: 'mohiuddin',
-//   salary: '12000',
-//   age: 25
-// }
-
-// let newSalary = Object.create(mySalary)
-// console.log(newSalary)
-
-function home(myName, myClass, mySub) {
-  let student = Object.create(home.prototype);
-
-  student.myName = myName;
-  student.myClass = myClass;
-  student.mySub = mySub;
-
-  return student;
-}
-
-home.prototype = {
-  myWish() {
-    console.log("i want to be a programer");
-  },
-  myHobby() {
-    console.log("i want to be a criminal");
-  },
+  return cars;
 };
 
-let firstName = new home("mohiuddin", "Honours", "Accounting");
+let toyota = new prog("frod", "20 milion");
+let person = new prog("samiul", "3200");
 
-console.log(firstName.myWish());
+toyota.salary();
+
+console.log(toyota);
+console.log(person);
+
+let mySalary = {
+  name: "mohiuddin",
+  salary: "12000",
+  age: 25,
+};
+
+let newSalary = Object.create(mySalary);
+console.log(newSalary);
+
+// function home(myName, myClass, mySub) {
+//   let student = Object.create(home.prototype);
+
+//   student.myName = myName;
+//   student.myClass = myClass;
+//   student.mySub = mySub;
+
+//   return student;
+// }
+
+// home.prototype = {
+//   myWish() {
+//     console.log("i want to be a programer");
+//   },
+//   myHobby() {
+//     console.log("i want to be a criminal");
+//   },
+// };
+
+// let firstName = new home("mohiuddin", "Honours", "Accounting");
+
+// console.log(firstName.myWish());

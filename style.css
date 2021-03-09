@@ -12,7 +12,7 @@ body {
 .display {
   width: 400px;
   height: 20vh;
-  background: green;
+  background: rgb(185, 185, 207);
 
   position: absolute;
   left: 50%;
