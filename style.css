@@ -2,6 +2,8 @@
 * {
   margin: 0;
   padding: 0;
+list-style: none;
+
 }
 
 body {
@@ -23,3 +25,5 @@ body {
   font-weight: bolder;
   font-family: "Akaya Telivigala", cursive;
 }
+
+
