@@ -1,39 +1,113 @@
+// let i = 0;
+// let txt = "";
 
-//FINDING HTML ELEMENT BY ID
+// let personalHobby = {
+//   name: "Mohiuddin",
+//   cars: ["BMW", "Volvo", "Saab", "Ford"],
+//   year: 2022,
+//   objectMethod: function(){
+//        return this.cars.forEach((a) => { console.log(`${this.name} will buy ${a}`)
+//       })
+//   }}
 
+//  personalHobby.objectMethod()
 
-// let x = document.getElementById('demo');
-// document.getElementById('home').innerHTML=
-// x.innerHTML
+// var cars = ["BMW", "Volvo", "Saab", "Ford"];
+// var i = 0;
+// var text = "";
 
-// console.log(x.innerHTML)
+// cars.forEach(myFc);
 
+// function myFc(a){
+//   console.log(a)
+// }
 
+// let typeHere , cloneR , displayResult;
 
-//FINDING HTML ELEMENT BY TAG NAME
+// typeHere = document.querySelector('.type__here');
+// cloneR = document.querySelector('.show__result');
+// displayResult = document.querySelector('.display');
 
-// let x = document.getElementsByTagName("h1");
-// document.getElementById('home').innerHTML=
-// x[1].innerHTML
-// console.log(x[0].innerHTML)
+// function dataTrans(){
 
+//   setTimeout(
+//     ()=>{
+//     displayResult.innerHTML = this.value
+//    }, 1000
+//   )
 
+// }
 
-//Finding HTML Elements by Class Name
+// typeHere.addEventListener("keyup", dataTrans);
 
-// let x = document.getElementsByClassName('myTurn');
-// document.getElementById('home').innerHTML=
-// x[1].innerText
+//constractor
 
-// console.log(x[1].innerHTML)
+// let house = function(price,location){
+//     this.price = price;
+//     this.location = location
+// }
 
+// let demand = new house('120000','south Banasree');
 
+// console.log(demand)
 
+// let salaryMethod = {
+//   salary(){
+//     console.log("ur salary is ....")
+//   },
 
+//   age(){
+//       console.log("ur age is ....")
+//   }
 
-//Finding HTML Elements by CSS Selectors
+// };
 
+// let prog = function(name,price){
+//   let cars = Object.create(salaryMethod);
 
-let x = document.querySelector('div#home');
+// cars.name = name;
+// cars.price = price;
 
-console.log(x.);
+// return cars;
+
+// }
+
+// let toyota = new prog('frod','20 milion');
+// let person = new prog('samiul','3200');
+
+// toyota.salary()
+
+// console.log(toyota)
+// console.log(person)
+
+// let mySalary = {
+//   name: 'mohiuddin',
+//   salary: '12000',
+//   age: 25
+// }
+
+// let newSalary = Object.create(mySalary)
+// console.log(newSalary)
+
+function home(myName, myClass, mySub) {
+  // let student = Object.create(home.prototype);
+
+  this.myName = myName;
+  this.myClass = myClass;
+  this.mySub = mySub;
+
+  // return student;
+}
+
+home.prototype = {
+  myWish() {
+    console.log("i want to be a programer");
+  },
+  myHobby() {
+    console.log("i want to be a criminal");
+  },
+};
+
+let firstName = new home("mohiuddin", "Honours", "Accounting");
+
+console.log(firstName.myWish());
