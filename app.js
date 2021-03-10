@@ -89,25 +89,24 @@
 // let newSalary = Object.create(mySalary)
 // console.log(newSalary)
 
-function home(myName, myClass, mySub) {
-  // let student = Object.create(home.prototype);
+class person{
 
-  this.myName = myName;
-  this.myClass = myClass;
-  this.mySub = mySub;
+    constructor(myName, myClass, mySub){
+        this.myName = myName;
+        this.myClass = myClass;
+        this.mySub = mySub;
+    }
 
-  // return student;
+    myWish() {
+        console.log("i want to be a programer");
+      }
+      myHobby() {
+        console.log("i want to be a criminal");
+      }
+
 }
 
-home.prototype = {
-  myWish() {
-    console.log("i want to be a programer");
-  },
-  myHobby() {
-    console.log("i want to be a criminal");
-  },
-};
 
-let firstName = new home("mohiuddin", "Honours", "Accounting");
+let firstName = new person("mohiuddin", "Honours", "Accounting");
 
 console.log(firstName.myWish());
