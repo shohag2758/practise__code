@@ -89,24 +89,47 @@
 // let newSalary = Object.create(mySalary)
 // console.log(newSalary)
 
-class person{
+// class person{
 
-    constructor(myName, myClass, mySub){
-        this.myName = myName;
-        this.myClass = myClass;
-        this.mySub = mySub;
-    }
+//     constructor(myName, myClass, mySub){
+//         this.myName = myName;
+//         this.myClass = myClass;
+//         this.mySub = mySub;
+//     }
 
-    myWish() {
-        console.log("i want to be a programer");
-      }
-      myHobby() {
-        console.log("i want to be a criminal");
-      }
+//     myWish() {
+//         console.log("i want to be a programer");
+//       }
+//       myHobby() {
+//         console.log("i want to be a criminal");
+//       }
+
+// }
+
+// let firstName = new person("mohiuddin", "Honours", "Accounting");
+
+// console.log(firstName);
+
+// //////////// test area//////////////
+
+class TimeOuter{
+  constructor(name,year,price){
+    this.name = name;
+    this.year = year;
+    this.price = price;
+  }
+
+  companyAsset (x){
+    return x - this.year
+  }
+
 
 }
 
+let timeSpace = new Date();
 
-let firstName = new person("mohiuddin", "Honours", "Accounting");
+let shiftTime = timeSpace.getFullYear();
 
-console.log(firstName.myWish());
+let cars = new TimeOuter("Frod",2014,"400000");
+
+console.log(cars.companyAsset(shiftTime))
