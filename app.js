@@ -110,4 +110,4 @@ home.prototype = {
 
 let firstName = new home("mohiuddin", "Honours", "Accounting");
 
-console.log(firstName);
+console.log(firstName.myWish());
